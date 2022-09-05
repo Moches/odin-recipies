@@ -17,18 +17,88 @@
     padding: 0;
 }
 
+body {
+    max-width: 54.44rem;
+    margin: 0 auto;
+    background-color: var(--body);
+}
+
 ul, ol {
     padding: 0 1rem;
     margin-block-end: 1rem;
 }
-h1, h2, h3 {
+h1, h2 {
     margin-block-start: 1rem;
     margin-block-end: 1rem;
+    text-align: center;
+}
+
+h3 {
+    margin-block-start: 1.5rem;
+}
+
+p {
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+figure {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 33.33rem;
+    padding: 1rem;
+}
+
+figcaption {
+    font-size: 0.778rem;
+    font-style: italic;
+    color: var(--note);
+    margin-block-end: 1.5rem;
+}
+
+ul, ol{
+    max-width: 54.44rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+ul li, ol li{
+    margin: 0.444rem 0 0 0;
+}
+
+ul li a{
+    color: var(--protip);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+ul li a:hover {
+    color: var(--copy);
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.notice {
+    font-size: 0.778rem;
+    color:var(--note);
+    font-style: italic;
+    margin-block-start: 1.5rem;
+    text-align: center;
 }
 
 .note {
     color: var(--note);
     font-style: italic;
+}
+
+p.note {
+    margin: 0.5rem 0 1rem 0;
 }
 
 p.note span{
