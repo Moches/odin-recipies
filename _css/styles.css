@@ -1,0 +1,38 @@
+/* CSS Styles by Moches (c) 2022 */
+
+:root {
+    font-size: 18px;
+    --body: lightgrey;
+    --copy: #222;
+    --title: #000;
+    --note: grey;
+    --protip: tomato;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    padding: 0 1rem;
+    margin-block-end: 1rem;
+}
+h1, h2, h3 {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.note {
+    color: var(--note);
+    font-style: italic;
+}
+
+p.note span{
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--protip)
+}
