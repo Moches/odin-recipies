@@ -23,10 +23,21 @@ body {
     background-color: var(--body);
 }
 
+body:last-of-type {
+    margin-bottom: 3rem;
+}
+
 ul, ol {
     padding: 0 1rem;
     margin-block-end: 1rem;
+    color: var(--copy);
 }
+
+h1 {
+    color: var(--protip);
+    padding: 0 .5rem;
+}
+
 h1, h2 {
     margin-block-start: 1rem;
     margin-block-end: 1rem;
@@ -76,12 +87,16 @@ ul li, ol li{
 ul li a{
     color: var(--protip);
     text-decoration: none;
-    transition: all 0.3s;
+    transition: color 0.3s;
 }
 ul li a:hover {
     color: var(--copy);
     text-decoration: underline;
-    transition: all 0.3s;
+    transition: color 0.3s;
+}
+
+ol li:last-of-type {
+    margin-bottom: 2rem;
 }
 
 .notice {
@@ -92,17 +107,59 @@ ul li a:hover {
     text-align: center;
 }
 
+div.data-wrapper {
+    text-align: center; 
+    border: 1px solid var(--copy); 
+    max-width: 75%; 
+    margin: 0 auto;
+}
+
+div.data-wrapper p {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: .5rem 0;
+}
+div.data-wrapper p span {
+    font-weight: 700;
+}
+
 .note {
     color: var(--note);
     font-style: italic;
 }
 
 p.note {
-    margin: 0.5rem 0 1rem 0;
+    max-width: 75%; 
+    margin: 0 auto;
+    padding: .5rem 0;
 }
 
 p.note span{
     font-weight: 700;
     font-size: 1.125rem;
     color: var(--protip)
+}
+
+.back {
+    text-align: center;
+    background-color: var(--protip);
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 0.222rem;
+}
+
+a.back {
+    display: block;
+    max-width: 15rem;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.back:hover {
+    box-shadow: 1px 1px 8px var(--note);
+    color:var(--copy);
+    text-decoration: underline;
+    transition: color 0.3s;
+    
 }
